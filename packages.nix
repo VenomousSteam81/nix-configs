@@ -1,7 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
+    # Wine Packages
+    wineWowPackages.staging
+    winetricks
+
+    # OBS Packages    
     ( pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
         wlrobs

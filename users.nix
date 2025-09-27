@@ -2,12 +2,13 @@
 
 {
   users = {
+  groups.libvirtd.members = [ "lizzie" ];
   groups.lizzie = {};
     users.lizzie = {
       shell = pkgs.fish;
       isNormalUser = true;
       group = "lizzie";
-      extraGroups = [ "wheel" "qemu-libvirtd" "tty" "disk" "audio" "video" "usb" "input" "render" "qemu" "libvirt" "pipewire" "android" ];
+      extraGroups = [ "wheel" "tty" "disk" "audio" "video" "usb" "input" "render" "qemu" "pipewire" "android" ];
       packages = with pkgs; [
         tree
         fish
@@ -25,7 +26,7 @@
         jq
         hyfetch
         zip unzip file multipath-tools gparted
-        openssl
+        openssl unixtools.net-tools nmap
         android-tools usbutils pciutils
         legcord
         prismlauncher

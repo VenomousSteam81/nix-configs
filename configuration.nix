@@ -11,10 +11,7 @@
       ./programs.nix # Contains "program.enable" config
       ./networking.nix # Contains networking config
       ./misc.nix # Contains extra one-liners that were cluttering up this file
-
-      # Package nix files
-      ./package-obs.nix # OBS Package in a single nix file
-      ./package-wine.nix # Wine Package in a single nix file
+      ./packages.nix # Contains packages
     ];
 
   system.copySystemConfiguration = true;
