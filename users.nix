@@ -7,7 +7,7 @@
       shell = pkgs.fish;
       isNormalUser = true;
       group = "lizzie";
-      extraGroups = [ "wheel" "libvirtd" "qemu-libvirtd" "users" ];
+      extraGroups = [ "wheel" "qemu-libvirtd" "tty" "disk" "audio" "video" "usb" "input" "render" "qemu" "libvirt" "pipewire" "android" ];
       packages = with pkgs; [
         tree
         fish
@@ -28,6 +28,7 @@
         openssl
         android-tools usbutils pciutils
         legcord
+        prismlauncher
       ];
     };
 

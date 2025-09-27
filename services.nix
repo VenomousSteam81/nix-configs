@@ -17,5 +17,11 @@
       pulse.enable = true;
     };
     openssh.enable = true;
+    cron = {
+      enable = true;
+      systemCronJobs = [
+        "@daily    lizzie    git -C /etc/nixos add .;git -C /etc/nixos commit -m \"24h update\";git -C /etc/nixos push -u origin main"
+      ];
+    };
   };
 }
