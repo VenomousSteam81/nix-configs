@@ -17,6 +17,7 @@
       pulse.enable = true;
     };
     openssh.enable = true;
+    tailscale.enable = true;
     cron = {
       enable = true;
       systemCronJobs = [

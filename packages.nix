@@ -17,5 +17,8 @@
         obs-vkcapture
       ];
     })
+    # Other misc packages
+    tailscale
+    bubblewrap
   ];
 }
