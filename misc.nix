@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   time.timeZone = "America/Chicago";
@@ -11,5 +11,6 @@
   nixpkgs.config.allowUnfree = true;
   xdg.portal.enable = true;
   xdg.portal.xdgOpenUsePortal = true;
-  programs.virt-manager.enable = true;  
+  programs.virt-manager.enable = true;
+  virtualisation.libvirtd.qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
 }

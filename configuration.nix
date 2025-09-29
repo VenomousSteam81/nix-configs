@@ -1,9 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   imports =
     [
-      ./hardware-configuration.nix # Hardware config
+      ./hardware-configuration.nix # Default hardware config
       ./boot.nix # Contains boot stuff
       ./drives.nix # Contains other partitions and drives that should be mounted
       ./users.nix # Contains user configs
@@ -12,6 +12,7 @@
       ./networking.nix # Contains networking config
       ./misc.nix # Contains extra one-liners that were cluttering up this file
       ./packages.nix # Contains packages
+      ./hw.nix # Other hardware things (bluetooth, etc...)
     ];
 
   system.copySystemConfiguration = true;

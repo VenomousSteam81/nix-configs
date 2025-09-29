@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -20,5 +20,10 @@
     # Other misc packages
     tailscale
     bubblewrap
+    virtiofsd
+    vlc
+    nil
+    cmake cmakeCurses gnumake llvmPackages_21.libcxxClang
+    python313Packages.pip
   ];
 }

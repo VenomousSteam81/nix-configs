@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   services = {
@@ -21,7 +21,7 @@
     cron = {
       enable = true;
       systemCronJobs = [
-        "@daily    lizzie    git -C /etc/nixos add .;git -C /etc/nixos commit -m \"24h update\";git -C /etc/nixos push -u origin main"
+        "@daily    lizzie    bash /home/lizzie/push.sh"
       ];
     };
   };
