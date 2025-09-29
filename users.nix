@@ -12,7 +12,6 @@
       packages = with pkgs; [
         tree
         fish
-        steam
         flatpak
         python3
         git
@@ -30,6 +29,7 @@
         android-tools usbutils pciutils
         legcord
         prismlauncher
+        w3m
       ];
     };
 
@@ -39,7 +39,6 @@
       packages = with pkgs; [
         tree
         fish
-        steam
         flatpak
         python3
         git
