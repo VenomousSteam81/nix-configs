@@ -35,7 +35,7 @@
 
     users.test = {
       isNormalUser = true;
-      extraGroups = [ "wheel" ];
+      extraGroups = [ "wheel" "tty" "disk" "audio" "video" "usb" "input" "render" "pipewire" ];
       packages = with pkgs; [
         tree
         fish
