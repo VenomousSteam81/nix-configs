@@ -17,13 +17,16 @@
         obs-vkcapture
       ];
     })
+
     # Other misc packages
-    tailscale
-    bubblewrap
-    virtiofsd
-    vlc
-    nil
-    cmake cmakeCurses gnumake llvmPackages_21.libcxxClang
-    python313Packages.pip
+    tailscale bubblewrap virtiofsd vlc nil
+    cmake cmakeCurses gnumake llvmPackages_21.libcxxClang python313Packages.pip
+    tree fish flatpak python3 git pipx
+    audacious kew kdePackages.kpat btop htop
+    wget xhosts xorg.xhost pulseaudio playerctl jq hyfetch
+    zip unzip file multipath-tools gparted openssl nettools nmap
+    android-tools usbutils pciutils legcord
+    prismlauncher w3m umu-launcher
+    mesa-demos virtualgl virtualglLib
   ];
 }
