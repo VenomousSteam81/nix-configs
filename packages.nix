@@ -27,6 +27,7 @@
     zip unzip file multipath-tools gparted openssl nettools nmap
     android-tools usbutils pciutils legcord
     prismlauncher w3m umu-launcher
-    mesa-demos virtualgl virtualglLib
+    mesa-demos virtualgl virtualglLib libnotify fuse3 fuse busybox
+    bash-language-server scrcpy ncurses ncurses6 ncurses5 gcc
   ];
 }
