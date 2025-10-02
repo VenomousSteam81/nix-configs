@@ -9,12 +9,8 @@
     # OBS Packages    
     ( pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
-        wlrobs
-        obs-backgroundremoval
-        obs-pipewire-audio-capture
+        wlrobs obs-backgroundremoval obs-pipewire-audio-capture obs-gstreamer obs-vkcapture
         obs-vaapi #optional AMD hardware acceleration
-        obs-gstreamer
-        obs-vkcapture
       ];
     })
 
@@ -29,5 +25,6 @@
     prismlauncher w3m umu-launcher
     mesa-demos virtualgl virtualglLib libnotify fuse3 fuse busybox
     bash-language-server scrcpy ncurses ncurses6 ncurses5 gcc
+    paprefs discord zed-editor nixfmt-classic cryptsetup wl-clipboard
   ];
 }

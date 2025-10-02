@@ -3,6 +3,11 @@
 {
   services = {
     libinput.enable = true;
+    tailscale.enable = true;
+    openssh.enable = true;
+    desktopManager.plasma6.enable = true;
+    xserver.enable = true;
+    lvm.enable = true;
     displayManager = {
       sddm = { 
         enable = true;
@@ -10,14 +15,10 @@
         settings.General.DisplayServer = "wayland";
       };
     };
-    desktopManager.plasma6.enable = true;
-    xserver.enable = true;
     pipewire = {
       enable = true;
       pulse.enable = true;
     };
-    openssh.enable = true;
-    tailscale.enable = true;
     cron = {
       enable = true;
       systemCronJobs = [
