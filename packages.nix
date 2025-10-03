@@ -16,15 +16,16 @@
 
     # Other misc packages
     tailscale bubblewrap virtiofsd vlc nil
-    cmake cmakeCurses gnumake llvmPackages_21.libcxxClang python313Packages.pip
+    python313Packages.pip
     tree fish flatpak python3 git pipx
     audacious kew kdePackages.kpat btop htop
     wget xhosts xorg.xhost pulseaudio playerctl jq hyfetch
     zip unzip file multipath-tools gparted openssl nettools nmap
     android-tools usbutils pciutils legcord
     prismlauncher w3m umu-launcher
-    mesa-demos virtualgl virtualglLib libnotify fuse3 fuse busybox
-    bash-language-server scrcpy ncurses ncurses6 ncurses5 gcc
-    paprefs discord zed-editor nixfmt-classic cryptsetup wl-clipboard
+    mesa-demos libnotify fuse3 fuse busybox
+    bash-language-server scrcpy
+    paprefs discord equibop zed-editor nixfmt-classic cryptsetup fzf
+    espeak pavucontrol mc qpwgraph
   ];
 }
