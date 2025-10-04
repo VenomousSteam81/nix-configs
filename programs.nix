@@ -20,5 +20,6 @@
     nix-ld.enable = true;
     java.enable = true;
     steam.enable = true;
+    virt-manager.enable = true;
   };
 }

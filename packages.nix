@@ -78,8 +78,8 @@
     qpwgraph
     minicom
     ripgrep
-    steamcmd
     bubblewrap
-    glibc
+    glibc glibc_multi
+    distrobox
   ];
 }
