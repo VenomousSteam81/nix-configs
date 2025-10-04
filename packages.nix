@@ -21,7 +21,6 @@
 
     # Other misc packages
     tailscale
-    bubblewrap
     virtiofsd
     vlc
     nil
@@ -80,5 +79,7 @@
     minicom
     ripgrep
     steamcmd
+    bubblewrap
+    glibc
   ];
 }
