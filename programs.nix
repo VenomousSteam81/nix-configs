@@ -16,8 +16,9 @@
     xfconf.enable = true;
     light.brightnessKeys.enable = true;
     obs-studio.enableVirtualCamera = true;
-    steam.enable = true;
     niri.enable = true;
     nix-ld.enable = true;
+    java.enable = true;
+    steam.enable = true;
   };
 }
