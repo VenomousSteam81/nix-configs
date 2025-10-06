@@ -81,5 +81,10 @@
     bubblewrap
     glibc glibc_multi
     distrobox
+    audacity
+    alsa-utils
+    #play
+    playerctl
+    sox
   ];
 }
