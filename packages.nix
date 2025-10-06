@@ -86,5 +86,7 @@
     #play
     playerctl
     sox
+    putty
+    tor-browser-bundle-bin
   ];
 }

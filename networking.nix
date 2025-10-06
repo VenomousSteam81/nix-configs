@@ -3,7 +3,10 @@
 {
   networking = {
     hostName = "thundertop";
-    wireless.enable = true;
+    networkmanager = {
+      enable = true;
+    };
+    # wireless.enable = true;
     # firewall.allowedTCPPorts = [ ... ];
     # firewall.allowedUDPPorts = [ ... ];
     firewall.enable = false;
